@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+       <div> 
+        <h3>Celsius to Fahrenheit ( Enter Celsius ) </h3>
+        <input type="text" id="m_value"><br><br><br>
+        <button id="m_val" onclick="fun()">Enter</button>
+        <div>
+       </div>
+         <p id="m_abc"> </p>
+         <h3> Fahrenheit to Celsius ( Enter Fahrenheit ) </h3>
+         <input type="text" id="value1"><br><br><br>
+         <button id="value1" onclick="fun1()">Enter</button>
+         <div>
+        </div>
+          <p id="m_abc1"> </p>
+
+        </div>
+
+
+</div>    
+
+<div>  
+        <br><br><br>
+        <input type="text" id="value">
+        <button type="button"  onclick="prime2()" >prime or not </button>
+        <button type="button"  onclick="prime3()" >prime less than current </button>
+        <button type="button"   onclick="prime4()" >primes upto that number</button>
+        <div>
+        <div>
+            <p id="abc"></p>
+        </div>
+        <div>
+            <p id="bcd"></p>
+        </div>
+        <div>
+             <pre id="cd"> </pre>
+            
+        </div>
+        
+        
+        
+</div>
+<script src="idx.js">
+function prime3(){
+    var num=document.getElementById('value');
+        var n=num.value;
+        var two=document.getElementById("bcd");
+            for(var i=n-1;i>=2;i--){
+                if(verify(i)){
+                   two.innerHTML=i;
+                   break;
+                }
+            }
+}
+</script>
+</div>
+</body>
+</html>
